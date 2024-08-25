@@ -1,4 +1,3 @@
-# 
 
 import keyboard
 import time
@@ -35,3 +34,4 @@ def capture_keystrokes(event):
     
     while True:
         time.sleep(1)
+        
